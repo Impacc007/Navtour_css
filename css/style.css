@@ -6,7 +6,6 @@ Medium green: #55c57a
 Dark green: #28b485
 
 */
-
 *,
 *::after,
 *::before {
@@ -30,13 +29,7 @@ body {
 
 .header {
   height: 95vh;
-  background-image:
-    linear-gradient(
-      to right bottom,
-      rgba(126, 213, 111, 0.8),
-      rgba(40, 180, 133, 0.8)
-    ),
-    url(../img/hero.jpg);
+  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(../img/hero.jpg);
   background-size: cover;
   background-position: top;
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
@@ -64,7 +57,6 @@ body {
 .heading-primary {
   color: #fff;
   text-transform: uppercase;
-
   backface-visibility: hidden;
   margin-bottom: 6rem;
 }
@@ -74,7 +66,6 @@ body {
   font-size: 6rem;
   font-weight: 400;
   letter-spacing: 3.5rem;
-
   animation-name: moveInLeft;
   animation-duration: 1s;
   animation-timing-function: ease-out;
@@ -85,7 +76,6 @@ body {
   font-size: 2rem;
   font-weight: 700;
   letter-spacing: 1.7rem;
-
   animation: moveInRight 1s ease-out;
 }
 
@@ -94,45 +84,37 @@ body {
     opacity: 0;
     transform: translateX(-10rem);
   }
-
   80% {
     transform: translateX(2rem);
   }
-
   100% {
     opacity: 1;
     transform: translate(0);
   }
 }
-
 @keyframes moveInRight {
   0% {
     opacity: 0;
     transform: translateX(10rem);
   }
-
   80% {
     transform: translateX(-2rem);
   }
-
   100% {
     opacity: 1;
     transform: translateX(0);
   }
 }
-
 @keyframes moveInBottom {
   0% {
     opacity: 0;
     transform: translateY(3rem);
   }
-
   100% {
     opacity: 1;
     transform: translate(0);
   }
 }
-
 .btn:link,
 btn:visited {
   text-transform: uppercase;
@@ -185,3 +167,5 @@ btn:visited {
   animation: moveInBottom 0.5s ease-out 0.75s;
   animation-fill-mode: backwards;
 }
+
+/*# sourceMappingURL=style.css.map */
